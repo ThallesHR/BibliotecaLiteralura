@@ -1,7 +1,8 @@
-*LiterAlura - Biblioteca Digital 📚
+#LiterAlura - Biblioteca Digital 📚
+<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Conclu%C3%ADdo&color=success&style=for-the-badge" alt="Status Concluído"> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java"> <img src="https://img.shields.io/github/last-commit/ThallesHR/ConversorMoeda?style=for-the-badge" alt="Último Commit"> </p>
 O LiterAlura é uma aplicação de console desenvolvida em Java que permite o gerenciamento de um catálogo literário através do consumo da API Gutendex. O projeto foca em persistência de dados relacional e manipulação de arquivos JSON.
 
-*🚀 Funcionalidades
+##🚀 Funcionalidades
 O sistema oferece um menu interativo com as seguintes capacidades:
 
 Busca Web Dinâmica: Pesquisa livros pelo título diretamente na API Gutendex e salva os resultados (livro e autor) no banco de dados local.
@@ -20,7 +21,7 @@ Busca por título dentro do acervo local.
 
 Estatísticas por Idioma: Conta a quantidade de livros registrados filtrando por siglas de idiomas (ex: pt, en, fr).
 
-*🛠️ Tecnologias Utilizadas
+##🛠️ Tecnologias Utilizadas
 Java 21: Versão utilizada no desenvolvimento.
 
 Spring Boot 4.0.3: Framework base para a aplicação.
@@ -31,7 +32,7 @@ PostgreSQL: Banco de dados relacional para armazenamento persistente.
 
 Jackson: Biblioteca para conversão de JSON em objetos Java (DTOs/Records).
 
-*📁 Estrutura do Projeto
+##📁 Estrutura do Projeto
 model: Contém as entidades JPA (Livro, Autor) e os Records para mapeamento do JSON (DadosLivro, DadosAutor, Resultados).
 
 repository: Interfaces que estendem JpaRepository para operações de CRUD e queries customizadas.
@@ -40,7 +41,7 @@ services: Classes responsáveis pelo consumo da API via HttpClient e conversão 
 
 principal: Classe Principal.java que gerencia a lógica do menu e interação com o usuário.
 
-*🌐 Integração com a API Gutendex
+##🌐 Integração com a API Gutendex
 O LiterAlura consome dados da Gutendex, uma API pública que fornece informações sobre mais de 70.000 livros gratuitos do Projeto Gutenberg.
 
 Como funciona o consumo:
@@ -67,7 +68,7 @@ languages ➔ Lista de siglas de idiomas.
 
 download_count ➔ Total de downloads registados.
 
-*🔧 Configuração e Instalação
+##🔧 Configuração e Instalação
 Pré-requisitos
 JDK 21 instalado.
 
